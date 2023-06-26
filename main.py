@@ -11,5 +11,4 @@ def chatapi():
     response = gpt4free.Completion.create(Provider.You, query)
     return response
 
-if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
+
