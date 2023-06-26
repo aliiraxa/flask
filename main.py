@@ -10,5 +10,5 @@ def chatapi():
     query = request.args.get('q')
     response = gpt4free.Completion.create(Provider.You, query)
     return response
-
-
+if __name__ == '__main__':
+    app.run(debug=True)
