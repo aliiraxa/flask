@@ -8,8 +8,9 @@ app = Flask(__name__)
 @app.route('/')
 def chatapi():
     query = "write easy for school"
-   #response = gpt4free.Completion.create(Provider.You, query)
-    return query
+response = gpt4free.Completion.create(Provider.You, prompt='Write a poem on Lionel Messi')
+
+    return response
 if __name__ == '__main__':
     app.run(debug=True)
 
