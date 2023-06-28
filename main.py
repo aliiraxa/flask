@@ -17,7 +17,7 @@ def chatapi():
         include_links=True, )
 
     print(response.dict())
-    return "test"
+    return response.dict()
 
 if __name__ == '__main__':
     app.run(debug=True)
