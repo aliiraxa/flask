@@ -14,7 +14,7 @@ from gpt4free import you
 def get_answer(question: str) -> str:
     # Set cloudflare clearance cookie and get answer from GPT-4 model
     try:
-        result = you.Completion.create(prompt=question,proxy='flashappdemo-86717296b023.herokuapp.com')
+        result = you.Completion.create(prompt=question,proxy='http://ip:port')
 
         return result.text
 
