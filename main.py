@@ -28,7 +28,7 @@ def get_answer(question: str) -> str:
 def index():
     return 'Ready'
 
-@app.route('/api/chatgpt', methods=['POST'])
+@app.route('/api/chatgpt', methods=['GET'])
 def api():
     # Get the data from the POST request.
     data = request.get_json(force=True)
