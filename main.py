@@ -28,11 +28,10 @@ def get_answer(question: str) -> str:
 def index():
     return 'Ready'
 
-@app.route('/api/chatgpt', methods=['GET'])
+@app.route('/api/chatgpt')
 def api():
-    # Get the data from the POST request.
-    data = request.get_json(force=True)
-    question = data['question']
+
+    question = "your name"
     answer = get_answer(question)
     escaped = answer.encode('utf-8').decode('unicode-escape')
     # return jsonify({'answer': escaped})
@@ -41,6 +40,3 @@ def api():
 
 if __name__ == '__main__':
     app.run()
-
-
-
