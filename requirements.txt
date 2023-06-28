@@ -1,27 +1,8 @@
-websocket-client
-requests
-tls-client
-pypasser
-names
-colorama
-curl_cffi
-aiohttp
-flask
-flask_cors
-streamlit
-selenium
-fake-useragent
-twocaptcha
-streamlit-chat@https://github.com/AI-Yash/st-chat/archive/refs/pull/24/head.zip
-pydantic
-pymailtm
-Levenshtein
-retrying
-mailgw_temporary_email
-pycryptodome
-random-password-generator
-numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
-tornado>=6.3.2 # not directly required, pinned by Snyk to avoid a vulnerability
-PyExecJS
-browser_cookie3
 gpt4free
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
