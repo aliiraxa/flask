@@ -1,14 +1,17 @@
 import json
 from flask import Flask, request, jsonify
 
-import gpt4free
-from gpt4free import Provider
+from gpt4free import you
 
 app = Flask(__name__)
 @app.route('/')
 def chatapi():
     query = "write easy for school"
-    response = gpt4free.Completion.create(Provider.You, prompt='Write a poem on Lionel Messi')
+       # simple request with links and details
+    response = you.Completion.create(
+        prompt="write hashtages for seo",
+        detailed=True,
+        include_links=True, )
 
     return response
 if __name__ == '__main__':
