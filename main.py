@@ -35,6 +35,7 @@ def api():
     answer = get_answer(question)
     escaped = answer.encode('utf-8').decode('unicode-escape')
     # return jsonify({'answer': escaped})
+    print(answer)
     return {'answer': escaped}
 
 
